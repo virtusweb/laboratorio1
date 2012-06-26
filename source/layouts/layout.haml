@@ -1,9 +1,57 @@
 !!! 5
 %html
   %head
-    %title= data.page.title || "My site"
-    = stylesheet_link_tag "bootstrap"
+    %script{:src => "twitter-bootstrap-v2/docs/assets/js/jquery.js"}
+    %script{:src => "twitter-bootstrap-v2/docs/assets/js/bootstrap-carousel.js"}
+    %link(href='http://fonts.googleapis.com/css?family=Questrial&v1' rel='stylesheet' type='text/css')
+    %title= data.page.title || "Corporativo Jurídico Inmobiliario"
+    = stylesheet_link_tag "bootstrap","juridico"
     = javascript_include_tag  "bootstrap"
   %body
     .container
+      .header    
+        .row
+          .span6
+            %img{:src => "/images/logo.png", :alt => "CORPORATIVO JURIDICO INMOBILIARIO"}       
+          .span6
+            .mtitle    
+              Asesoría Legal Gratuita<br/>
+              Tel: (0155) 5651-3234
+
+      .menu
+        %ul.breadcrumb
+          %li
+            %a{:href => "/index.html"} Inicio
+            %span.divider /
+          %li
+            %a{:href => "/pages/nosotros.html"} Nosotros
+            %span.divider /
+          %li
+            %a{:href => "/pages/servicios.html"} Servicios
+            %span.divider /
+          %li
+            %a{:href => "/pages/remates.html"} Remates Judiciales
+            %span.divider /
+          %li
+            %a{:href => "/pages/inmuebles.html"} Inmobiliario
+            %span.divider /
+          %li
+            %a{:href => "/pages/clientes.html"} Clientes
+            %span.divider /
+          %li
+            %a{:href => "/pages/contacto.html"} Contacto
+
+
       = yield
+      .footer
+        .row
+          .span6
+            %a{:href => "/pages/contacto.html"} 
+              %img{:src => "/images/asesoriab.png", :alt => "Asesoría Legal GRATUITA"}/
+          .span6
+            %a{:href => "/images/edictos.pdf"}
+              %img{:src => "/images/rematesb.png", :alt => "Remates Judiciales"}/
+            
+          .row
+            .span12
+              Querétaro 222 int 104, col. Roma. c.p. 06760, Delegación Cuauhtémoc, Distrito Federal. Tel 5651-3234
