@@ -87,4 +87,35 @@ body {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+//Galería inmuebles
+#myGallery {
+	width: 100%;
+	height: 400px;
+}
+#myGallery img {
+	border: 2px solid #52697E;
+}
+a.loading {
+	background: #fff url(/images/ajax_small.gif) no-repeat center;
+}
+
+.spacegallery {
+	position: relative;
+	overflow: hidden;
+}
+.spacegallery img {
+	position: absolute;
+	left: 50%;
+}
+.spacegallery a {
+	position: absolute;
+	z-index: 1000;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(/images/blank.gif);
+}
+
 
