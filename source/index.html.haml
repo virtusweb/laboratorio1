@@ -16,20 +16,41 @@ title: Corporativo Jurídico Inmobiliario
   .span5
     #myCarousel.carousel.slide
       .carousel-inner
-        .active.item 
-          %img{:alt => "Materia Mercantil", :height => "360", :src => "/images/mercantil.png", :width => "400"}/
         .item
-          %img{:alt => "Materia Familiar", :height => "360", :src => "/images/familiar.png", :width => "400"}/
+          = image_tag "/images/mercantil.png"
+          .carousel-caption
+            %h4 Asesoría Materia Mercantil
+            %p
+        .item.active
+          = image_tag "/images/familiar.png"
+          .carousel-caption
+            %h4 Asesoría Materia Familiar
+            %p
         .item
-          %img{:alt => "Materia Laboral", :height => "360", :src => "/images/laboral.png", :width => "400"}/
+          = image_tag "/images/penal.png"
+          .carousel-caption
+            %h4 Asesoría Materia Penal
+            %p
         .item
-          %img{:alt => "Materia Civil", :height => "360", :src => "/images/civil.png", :width => "400"}/
+          = image_tag "/images/laboral.png"
+          .carousel-caption
+            %h4 Asesoría Materia Laboral
+            %p
 
         .item
-          %img{:alt => "Remates Judiciales", :height => "360", :src => "/images/remates.jpg", :width => "400"}/
+          = image_tag "/images/civil.png"
+          .carousel-caption
+            %h4 Asesoría Materia Civil
+            %p
 
-      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
-      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+        .item
+          = image_tag "/images/remates.jpg"
+          .carousel-caption
+            %h4 Asesoría Compra-Venta de Inmuebles
+            %p
+
+      //%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"} ‹
+      //%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"} ›
       
 
 
