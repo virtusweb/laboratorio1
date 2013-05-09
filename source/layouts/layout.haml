@@ -25,11 +25,14 @@
         .row
           .span6
             %img{:src => "/images/logo.png", :alt => "CORPORATIVO JURIDICO INMOBILIARIO"}       
-          .span6
+          .span4
             .mtitle    
-              Asesoría Legal Profesional<br/>
+              Especialistas en <br/>Remates Judiciales<br/>
               Tel: 5651-3234
-
+          .span2
+            .mtitle    
+            %a{:href => "/pages/contacto.html"}
+              %img{:src => "/images/contacto.jpg", :alt => "Remates Judiciales"}/
       .menu
         %ul.breadcrumb
           %li
@@ -38,6 +41,9 @@
           %li
             %a{:href => "/pages/nosotros.html"} Nosotros
             %span.divider /
+          %li
+            %a{:href => "/pages/remates.html"} Remates Judiciales
+            %span.divider /  
           %li
             %a{:href => "/pages/servicios.html"} Jurídico
             %span.divider /
@@ -53,15 +59,10 @@
           %li
             %a{:href => "/pages/renta.html"} Renta Inmuebles
             %span.divider /
-          %li
-            %a{:href => "/pages/remates.html"} Remates Judiciales
-            %span.divider /  
+          
           %li
             %a{:href => "/pages/clientes.html"} Clientes
-            %span.divider /
-          %li
-            %a{:href => "/pages/contacto.html"} Contacto
-
+          
 
       = yield
       .footer
