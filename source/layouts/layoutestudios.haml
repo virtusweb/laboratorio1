@@ -42,8 +42,7 @@
             
             %a{:href => "/pages/contacto.html"}
               %img.img-responsive{alt: "Imagen responsive",  src: "/images/contacto.jpg"}/
-            
-
+          
       
       .menu
         %ul.breadcrumb
@@ -77,17 +76,55 @@
               %img{:src => "/images/face.png", :alt => "Facebook"}
             
     
-      = yield
-      .footer
-             
-      .row
-        .col-md-12
-          %p.text-center
-            %small
-              Federico T. de la Chica No. 2 Edificio Zurich PB-3, Circuito Centro Comecial, Satelite. Naucalpan, Estado de México Tels 5393-89-89 y 5393-89-99 <br/>
-              <a href='/pages/privacidad.html'>Aviso de privacidad.<br/>
-        
       
+
+      .row
+        .col-md-2.col-md-offset-1
+          .list-group
+            %a.list-group-item.active
+              Listado de algunos Estudios de Laboratorio
+            %a.list-group-item{href: "/pages/estudiosa.html"} A
+            %a.list-group-item{href: "/pages/estudiosb.html"} B
+            %a.list-group-item{href: "/pages/estudiosc.html"} C
+            %a.list-group-item{href: "/pages/estudiosa.html"} D
+            %a.list-group-item{href: "/pages/estudiosa.html"} E
+            %a.list-group-item{href: "/pages/estudiosb.html"} F
+            %a.list-group-item{href: "/pages/estudiosc.html"} G
+            %a.list-group-item{href: "/pages/estudiosa.html"} H
+            %a.list-group-item{href: "/pages/estudiosa.html"} I
+            %a.list-group-item{href: "/pages/estudiosb.html"} J
+            %a.list-group-item{href: "/pages/estudiosc.html"} K
+            %a.list-group-item{href: "/pages/estudiosa.html"} L
+            %a.list-group-item{href: "/pages/estudiosa.html"} M
+                               
+
+        .col-md-2
+          .list-group
+            %a.list-group-item.active
+              Listado de algunos Estudios de Laboratorio
+            %a.list-group-item{href: "/pages/estudiosa.html"} N
+            %a.list-group-item{href: "/pages/estudiosb.html"} O
+            %a.list-group-item{href: "/pages/estudiosc.html"} P
+            %a.list-group-item{href: "/pages/estudiosa.html"} Q
+            %a.list-group-item{href: "/pages/estudiosa.html"} R
+            %a.list-group-item{href: "/pages/estudiosb.html"} S
+            %a.list-group-item{href: "/pages/estudiosc.html"} T
+            %a.list-group-item{href: "/pages/estudiosa.html"} U
+            %a.list-group-item{href: "/pages/estudiosa.html"} Y
+            %a.list-group-item{href: "/pages/estudiosb.html"} Z
+            
+
+        .col-md-6
+          = yield
+      .footer
+        .row
+          .col-md-12
+            %p.text-center
+              %small
+                Federico T. de la Chica No. 2 Edificio Zurich PB-3, Circuito Centro Comecial, Satelite. Naucalpan, Estado de México Tels 5393-89-89 y 5393-89-99 <br/>
+                <a href='/pages/privacidad.html'>Aviso de privacidad.<br/>
+          
+        
   
     :javascript
       $(document).ready(function() {
@@ -117,4 +154,9 @@
         });
   
         $('div.expander').expander();
-      });       
+      });     
+    
+
+ 
+
+  
